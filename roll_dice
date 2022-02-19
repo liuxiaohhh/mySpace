@@ -1,0 +1,15 @@
+import random
+
+def roll_dice(num=2):  # 默认值2，调用是如果不写自变量，就是2。 给自变量值才用给的值。
+    """摇骰子
+
+    :param:骰子的数量（对自变量--参数parameter的说明）
+    :return:摇出的点数（对因变量--返回值的说明）
+    """
+    total = 0
+    for _ in range(num) :
+        total += random.randrange(1,7)
+    return total
+
+player1 = roll_dice(2)
+print(player1)
